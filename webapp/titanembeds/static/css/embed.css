@@ -508,10 +508,14 @@ a {
 
 #loginmodal {
   font-size: 9pt;
+  text-align: center;
+  overflow: hidden;
 }
 
 #loginmodal h4 {
   font-size: 15pt;
+  text-align: center;
+  margin-top:20px;
 }
 
 #guest_login_instr {

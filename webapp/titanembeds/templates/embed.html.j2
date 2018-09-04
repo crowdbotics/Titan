@@ -120,26 +120,15 @@
 
       <div id="loginmodal" class="modal">
         <div class="modal-content">
-          <h4>{{ login_greeting }}</h4>
+          <h4>Welcome to Orion on Discord</h4>
           <div id="loginmodal-maincontent" class="row valign-wrap">
-            <div id="modal_guildinfobox" class="col s3 center-align">
-              {% if guild['icon'] %}
-              <img id="modal_guildiconcircle" class="circle" src="{{ generate_guild_icon( guild['id'], guild['icon']  ) }}">
-              {% endif %}
-              <p id="modal_guildname"><strong>{{ guild['name']|e }}</strong></p>
-              {% if guild["invite_link"] %}
-              <a id="modal_invite_btn_invite_link" class="waves-effect waves-light btn" target="_blank" href="{{ guild["invite_link"]|e }}">{{ guild["invite_domain"]|e }}</a>
-              {% else %}
-              <a id="modal_invite_btn" class="waves-effect waves-light btn" target="_blank">discord.gg</a>
-              {% endif %}
-            </div>
-            <div id="authfields" class="col s9">
-              <p id="authfield-choosetxt" class="flow-text">{{ _("Please choose one of the following methods to authenticate!") }}</p>
+            <div id="authfields" class="col s12">
+              <p id="authfield-choosetxt" class="flow-text">{{ _("Please login to your Discord account to authenticate:") }}</p>
               <div class="progress" id="loginProgress" style="display: none;">
                   <div class="indeterminate"></div>
               </div>
               <div class="row">
-                <div id="discordlogin_box" class="col s6 l4">
+                <div id="discordlogin_box" class="col s12 center-align">
                   <a id="discordlogin_btn" href="{% if not same_target %}{{ url_for("embed.login_discord", _external=True) }}{% else %}{{ url_for("user.login_authenticated", redirect=request.url+"&create_authenticated_user=true", _external=True) }}{% endif %}" class="waves-effect waves-light btn-large" {% if not same_target %}target="_blank"{% endif %}>{{ _("Discord Login") }}</a>
                   <p id="discordlogin_btn_warn">*{{ _("You will be invited into this server.") }}</p>
                 </div>
