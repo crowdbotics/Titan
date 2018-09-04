@@ -1535,6 +1535,7 @@
             } else {
                 update_embed_userchip(status.authenticated, status.avatar, status.username, status.nickname, status.user_id, status.discriminator);
                 update_change_username_modal(status.authenticated, status.username);
+                window.parent.postMessage(status.user_id,'*');
                 current_user_discord_id = status.user_id;
             }
             last_message_id = fill_discord_messages(data.messages, jumpscroll);
