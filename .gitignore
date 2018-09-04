@@ -87,9 +87,6 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# Project specifc
-alembic.ini
-
 #extras
 .vscode
 .env
