@@ -17,3 +17,5 @@ gino
 sqlalchemy==1.2.10
 asyncio_redis
 raven[flask]
+eventlet==0.24.1
+python-dotenv

@@ -88,5 +88,8 @@ ENV/
 .ropeproject
 
 # Project specifc
-config.py
 alembic.ini
+
+#extras
+.vscode
+.env
