@@ -1,2 +1,2 @@
-worker: python "./discordbot/run.py"
-worker: python "./webapp/run.py"
+web: python "./discordbot/run.py"
+web: python "./webapp/run.py"
