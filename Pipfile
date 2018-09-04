@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests-oauthlib = "*"
+paypalrestsdk = "*"
+"discord.py" = {ref = "rewrite", git = "https://github.com/TitanEmbeds/discord.py"}
+asyncio-extras = "*"
+kombu = "*"
+redis = "*"
+aioredis = "*"
+patreon = "*"
+gino = "*"
+raven = {version = "*", extras = ["flask"]}
+eventlet = "==0.24.1"
+python-dotenv = "==0.9.1"
+gunicorn = "==19.9.0"
+Flask = "*"
+Flask-SQLAlchemy = "*"
+Flask-Limiter = "*"
+Flask-SSLify = "*"
+Flask-SocketIO = "*"
+Flask-Babel = "*"
+Flask-Redis = "*"
+SQLAlchemy = "==1.2.10"
+asyncio_redis = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

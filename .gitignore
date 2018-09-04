@@ -93,3 +93,5 @@ alembic.ini
 #extras
 .vscode
 .env
+Pipfile
+Pipfile.lock
